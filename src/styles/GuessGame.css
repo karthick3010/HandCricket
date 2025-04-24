@@ -1,0 +1,91 @@
+/* Layout container */
+.game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #f0f4f8;
+}
+
+/* Each innings panel */
+.inning-panel {
+  flex: 1;
+  margin: 0 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Highlight current innings */
+.inning-panel.active {
+  border: 3px solid #00b894;
+  background-color: #eafff3;
+}
+
+/* Headers */
+.inning-panel h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+.inning-panel p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Scores */
+.inning-panel h3 {
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+/* Input and button section */
+input[type="number"] {
+  width: 60px;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #00cec9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #00b894;
+}
+
+/* Status message */
+.status-message {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0984e3;
+  margin: 15px 0;
+  text-align: center;
+}
+
+/* Game over text */
+.game-over-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d63031;
+  margin-top: 20px;
+}

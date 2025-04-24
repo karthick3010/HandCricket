@@ -1,0 +1,118 @@
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  background-image: url("../assets/start2.jpg"); /* Your background image */
+  background-size: cover; /* Ensure the background covers the whole container */
+  background-position: center center; /* Center the background image */
+  position: relative;
+  overflow: hidden; /* Prevent overflow from the background */
+}
+
+.start-button {
+  position: absolute;
+  bottom: 40px; /* Position the button from the bottom */
+  right: 40px; /* Position the button from the right */
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #148ff4;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #5651f7;
+  transform: scale(1.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.title-section {
+  position: absolute;
+  top: 30px;
+  left: 30px; /* Align the whole section to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+  gap: 20px;
+}
+
+.game-title {
+  font-size: 100px;
+  color: rgb(244, 219, 0);
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: left; /* Optional, ensures it's left-aligned */
+}
+
+.how-to-play-button {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #3aa834;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 12px 24px;
+}
+
+.how-to-play-button:hover {
+  background-color: #1e6a31;
+  transform: scale(1.05);
+}
+
+.instructions-box {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  font-size: 16px;
+}
+
+.instructions-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.instructions-box ul {
+  padding-left: 20px;
+}
+
+.instructions-box li {
+  margin-bottom: 8px;
+}
+
+.close-button:hover {
+  background-color: #c62828;
+}
